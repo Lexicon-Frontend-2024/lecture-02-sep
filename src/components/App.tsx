@@ -1,13 +1,12 @@
-import { AboutPage, HomePage, JoinUsPage } from "../pages";
+import { Outlet } from "react-router-dom";
 import { Footer } from "./Footer";
 
 export function App() {
   return (
     <>
-      <HomePage />
-      <AboutPage />
-      <JoinUsPage />
-      <Footer/>
+      {/* Outlet is a placeholder for the children routes of the component (parent route). */}
+      <Outlet />
+      <Footer />
     </>
   );
 }
